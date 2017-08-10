@@ -27,6 +27,7 @@ html {
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
+    margin-top: 60px;
     margin-bottom: 60px;
     background: #f4f4f4;
     -webkit-font-smoothing: antialiased;
@@ -380,7 +381,7 @@ address a i:hover {
 .hvr-underline-from-left:before {
     background: #000;
     height: 1px;
-    bottom: 2px;
+    bottom: 1px;
     transition: 0.4s cubic-bezier(1, 0, 0, 1);
     transition-delay: .1s;
 }
@@ -486,7 +487,7 @@ a:focus {
 }
 
 .cbp-item .btn {
-    width: 50%;
+    width: 100%;
     color: #fff;
     padding: 0;
     border: 0;
@@ -747,4 +748,58 @@ i.glyphicon-map-marker {
 .bs-docs-section h5,
 .bs-docs-section h6 {
     margin-top: 20px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.clock-loader {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+    padding: 1%; 
+}
+
+.bg{fill:#f8b356;}
+.bg2{fill:#ffc77c;}
+.clock-face{fill:#f05755;stroke:#FFFFFF;stroke-width:18;stroke-miterlimit:10;}
+.number{fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+.anchor{fill:#5d5437;stroke:#F2F2F2;stroke-width:2;stroke-miterlimit:10;}
+.date{fill:#333333;font-size:26px;}
+.short-stick {
+    fill:#FFFFFF;
+    transform-origin: bottom center;
+}
+.long-stick {
+    fill:#F2F2F2;
+    transform-origin: bottom center;
+}
+.stroke {
+    fill:none;
+    opacity: 0.5;
+    stroke:#c3c3c3;
+    stroke-width:4;
+    stroke-miterlimit:10;
+    animation: stroke-animation 4s ease-in-out infinite;
+    stroke-dasharray: 150, 250;
+    stroke-dashoffset: 628.32;
+}
+
+@keyframes stroke-animation {
+    50% {
+        stroke-dashoffset: 0;
+        opacity: 0.1;
+    }  
+    100% {
+        stroke-dashoffset: 628.32;
+        opacity: 0.5;
+    }  
 }
