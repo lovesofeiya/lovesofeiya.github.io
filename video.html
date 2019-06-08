@@ -19,6 +19,7 @@
 <!-- css -->
 <link href="css/style.css" rel="stylesheet">
 <link href="css/animate.css" rel="stylesheet">
+<link href="css/magnific-popup.css" rel="stylesheet">
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -57,14 +58,16 @@
                 <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
             </div><!-- / navbar-header -->
             <div class="navbar-collapse collapse">
-                 <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>PORTFOLIO</span> <span class="dropdown-icon"></span></a>
                         <ul class="dropdown-menu animated zoomIn fast">
                             <li><a href="motion.html"><span>MOTION DESIGN</span></a></li>
+                            <li><a href="uxui.html"><span>UX/UI</span></a></li>
                             <li><a href="poster.html"><span>POSTER</span></a></li>
                             <li><a href="brochure.html"><span>BROCHURE</span></a></li>
                             <li><a href="video.html"><span>VIDEO</span></a></li>
+                            <li><a href="logo.html"><span>LOGO</span></a></li>
                         </ul>
                     </li>
                     <li><a href="resume.pdf"><span>RESUME</span></a></li>
@@ -74,7 +77,6 @@
         </div><!-- / container -->
     </nav>
     <!-- / nav -->
-
     <!-- header-banner -->
     <div id="header-banner">
         <div class="banner-content single-page text-center">
@@ -90,44 +92,67 @@
 
 <!-- content -->
 
-<div id="page-content" class="container">
-    <!-- project content + sidebar -->
-    <section id="project">
-        <div class="container">
-            <!-- project content area -->
-            <div class="col-sm-5 col-xs-12">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/iPqOk_n6TRU"></iframe>
-                </div>
-                <div class="project-content-area">
-                    <h4>PROJECT DESCRIPTION</h4>
-                    <p>WholeRen Education needs a video to demonstrate the academic transfer services from community colleges to Top 50 universities to parents and students in China, who don't know community college system in the U.S well.In this video, WholeRen Guru, a mascot of WholeRen Education introduces the community college system in the U.S and the advantages of being part of this transfer program. </p>
-                </div><!-- / project-content-area -->    
-            </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-5 col-xs-12">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/fgnuUxHkCvw"></iframe>
-                </div>
-                <div class="project-content-area">
-                    <h4>PROJECT DESCRIPTION</h4>
-                    <p>American Homestay Services needs a video on the frontpage of their website to introduce the company and its services. Since most Chinese students don't know how to find a host family when they first come into the U.S, AHS can provide them with a full pack of service from family placement to legal guardianship.  </p>
-                </div><!-- / project-content-area -->    
-            </div>
-            <!-- / project-content-area -->
-        </div><!-- / row -->
-    </section>
-    <!-- / project content + sidebar -->
+<!-- portfolio section -->
+<section id="portfolio">
+    <div class="container">
+        <!-- portfolio filter 
+        <ul class="portfolio-filter list-inline text-center">
+            <li><a href="#" data-group="all" class="active ">ALL</a></li>
+            <li><a href="#" data-group="graphic-design">GRAPHIC DESIGN</a></li>
+            <li><a href="#" data-group="motion">MOTION</a></li>
+            <li><a href="#" data-group="uiux">UI/UX</a></li>
+        </ul><!--end portfolio filter -->
+        <ul class="row portfolio list-unstyled lightbox" id="grid">
+            <!-- project 1 -->
+           
+            <!-- project 8 -->
+            <li class="col-xs-6 col-md-4 project" data-groups='["motion"]'>
+                <div class="img-bg-color primary">
+                    <a href="Community-College.html" class="project-link">
+                    <!-- / project-link -->
+                    <img src="images/CC.png" alt=""></a>
+                    <!-- / project-image -->
+                    <!-- project-details -->
+                    <div class="project-details">
+                        <h5 class="project-title">WHAT'S A COMMUNITY COLLEGE</h5>
+                        <p class="skill">MOTION GRAPHIC</p>
+                    </div><!-- / project-details -->
+                </div><!-- / img-bg-color -->
+            </li>
+            <!-- / project 8-->
 
-</div><!-- / container -->
+            <!-- project -->
+            <li class="col-xs-6 col-md-4 project" data-groups='["motion"]'>
+                <div class="img-bg-color primary">
+                    <a href="ahs.html" class="project-link">
+                    <!-- / project-link -->
+                    <img src="images/ahs.png" alt=""></a>
+                    <!-- / project-image -->
+                    <!-- project-details -->
+                    <div class="project-details">
+                        <h5 class="project-title">AMERICAN HOME SERVICES</h5>
+                        <p class="skill">MOTION GRAPHIC</p>
+                    </div><!-- / project-details -->
+                </div><!-- / img-bg-color -->
+            </li>
+            <!-- / project -->
+            
+          
 
+            <!-- sizer -->
+            <li class="col-xs-6 col-md-4 shuffle_sizer"></li>      
+        </ul> <!-- / projects -->
+    </div><!-- / container -->
+
+</section>
+<!-- / portfolio section -->
 
 <!-- / content -->
 
 <!-- footer -->
 <footer>
     <div class="container">
-        <p class="footer-info">©Feiya Lin
+        <p class="footer-info">© Feiya Lin
             <span class="social pull-right">
                 <a href="https://dribbble.com/lovesofeiya"><i class="fa fa-dribbble"></i></a>
                 <a href="#x"><i class="fa fa-instagram"></i></a>
@@ -144,7 +169,22 @@
 
 <!-- portfolio -->
 <script src="js/custom.js"></script>
-
+<script src="js/jquery.shuffle.min.js"></script>
+<!-- lightbox -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript">
+// This will create a single gallery from all elements that have class "lightbox"
+$('.lightbox').each(function() {
+    $(this).magnificPopup({
+        delegate: 'a.open-gallery', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<!-- / lightbox -->
 <!-- / portfolio -->
 
 <!-- preloader -->

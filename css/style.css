@@ -258,6 +258,9 @@ strong {
 	overflow:hidden;
 }
 
+hr {
+    margin: 70px 0;
+}
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
 	top:0;
@@ -502,12 +505,12 @@ input:focus {
 /* End Animation Durations */
 ::-moz-selection {
   color: white;
-  background: rgba(195, 157, 109, 0.75);
+  background: #9c54f7;
 }
 
 ::selection {
   color: white;
-  background: rgba(195, 157, 109, 0.75);
+  background: #9c54f7;
 }
 
 /* Buttons */
@@ -1863,9 +1866,11 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
   width: 420px;
   border: 2px solid rgba(255, 255, 255, 0.75);
   margin: 0 auto;
-  padding: 10px;
 }
-
+.info-center {
+    text-align: center;
+    padding: 30px 70px;
+}
 .banner-border .banner-info {
   background: rgba(255, 255, 255, 0.75);
   width: 396px;
@@ -1881,7 +1886,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 }
 
 .banner-info.primary {
-  background: rgba(195, 157, 109, 0.75);
+  background: #9c54f7;
 }
 
 .banner-info.primary h1, .banner-info.primary p {
@@ -1921,7 +1926,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 }
 
 .feature-icon i {
-  color: #c39d6d;
+  color: #9c54f7;
   font-size: 30px;
 }
 
@@ -1948,6 +1953,11 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 }
 
 #portfolio .project {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#portfolio .project-no-hover {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -2048,7 +2058,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 }
 
 .project .img-bg-color.primary {
-  background: #698dfc;
+  background: #9c54f7;
 }
 
 .project .img-bg-color.default {
@@ -2115,7 +2125,7 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 
 .project .img-bg-color.default .open-gallery:hover {
   color: white;
-  background-color: #ad8b60;
+  background-color: #9c54f7;
 }
 
 .project-details {
@@ -2204,21 +2214,21 @@ table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table
 /* End Hover Effect */
 /* Portfolio with Info Box */
 #portfolio.info-box .portfolio-filter a.active {
-  color: #c39d6d;
+  color: #9c54f7;
   background-color: transparent;
   border: 2px solid #c39d6d;
 }
 
 #portfolio.info-box .portfolio-filter a.active:hover {
   color: white;
-  background-color: #c39d6d;
+  background-color: #9c54f7;
   border: 2px solid #c39d6d;
 }
 
 #portfolio.info-box .portfolio-filter a:hover {
   color: white;
-  background-color: #c39d6d;
-  border: 2px solid #c39d6d;
+  background-color: #9c54f7;
+  border: 2px solid #9c54f7;
 }
 
 #portfolio.info-box .project-details {
@@ -3689,7 +3699,10 @@ footer .social a {
     width: 90%;
     padding: 10px;
   }
-
+    .info-center {
+    text-align: center;
+    padding: 30px;
+  }
   .banner-border .banner-info {
     width: 100%;
     margin: 0 auto;
