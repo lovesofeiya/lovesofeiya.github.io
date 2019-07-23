@@ -3517,6 +3517,11 @@ footer .social a {
   }
 }
 @media only screen and (max-width: 600px) {
+    
+  .col-6 {
+    width: 50%;
+    float:left;
+  }
   .col-xs-6 {
     width: 100%;
   }
